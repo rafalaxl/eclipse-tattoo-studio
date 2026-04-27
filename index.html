@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse Tattoo Studio | Boutique de Arte na Pele</title>
+    <meta name="description" content="Eclipse Tattoo Studio - Experiência premium em tatuagem. Fine Line, Realismo e Blackwork em um ambiente de arte e exclusividade.">
+    <meta name="keywords" content="tatuagem, estúdio de tatuagem, realism, fine line, blackwork, tatuagem premium, arte na pele">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Eclipse Tattoo Studio | Arte que Transcende o Tempo">
+    <meta property="og:description" content="Transformamos sua identidade em obras de arte exclusivas. Conheça nosso estúdio boutique.">
+    <meta property="og:image" content="./assets/hero_tattoo.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'eclipse-black': '#0a0a0a',
+                        'eclipse-dark': '#1a1a1a',
+                        'eclipse-gold': '#c5a059',
+                    },
+                    spacing: {
+                        '24': '1.5rem', // Padronizando gap de 24px das referências
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- JSON-LD Structured Data for local business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TattooShop",
+      "name": "Eclipse Tattoo Studio",
+      "image": "https://seu-dominio.com/assets/hero_tattoo.png",
+      "@id": "",
+      "url": "https://seu-dominio.com",
+      "telephone": "+55-00-00000-0000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua da Arte, 123",
+        "addressLocality": "São Paulo",
+        "postalCode": "00000-000",
+        "addressCountry": "BR"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "10:00",
+        "closes": "20:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/eclipsetattoo",
+        "https://www.pinterest.com/eclipsetattoo"
+      ]
+    }
+    </script>
+</head>
+<body class="bg-eclipse-black text-white font-sans antialiased overflow-x-hidden">
+
+    <!-- Header / Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-effect border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-serif font-bold tracking-tighter text-eclipse-gold">
+                ECLIPSE<span class="text-white">STUDIO</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest">
+                <a href="#home" class="hover:text-eclipse-gold transition-colors duration-300">Início</a>
+                <a href="#artistas" class="hover:text-eclipse-gold transition-colors duration-300">Artistas</a>
+                <a href="#portfolio" class="hover:text-eclipse-gold transition-colors duration-300">Portfólio</a>
+                <a href="#contato" class="hover:text-eclipse-gold transition-colors duration-300">Agendamento</a>
+            </div>
+            <button class="bg-eclipse-gold text-eclipse-black px-6 py-2 rounded-full text-xs font-bold uppercase transition-all hover:scale-105 active:scale-95 hover:brightness-110 shadow-lg shadow-eclipse-gold/20">
+                Orçamento
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Img Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="./assets/hero_tattoo.png" alt="Studio" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-t from-eclipse-black via-transparent to-eclipse-black/60"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center max-w-4xl px-6">
+            <h1 class="text-5xl md:text-8xl font-serif font-bold mb-6 leading-tight reveal-text">
+                Arte que transcende o <span class="text-eclipse-gold italic">tempo.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Transformamos sua identidade em obras de arte exclusivas. Experiência Boutique de tatuagem no coração da cidade.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#portfolio" class="border border-white/20 px-8 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-eclipse-black transition-all">
+                    Ver Portfólio
+                </a>
+                <a href="#contato" class="bg-eclipse-gold text-eclipse-black px-8 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:brightness-110 transition-all shadow-[0_0_20px_rgba(197,160,89,0.3)]">
+                    Agendar Horário
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce flex flex-col items-center gap-2">
+            <span class="text-[10px] uppercase tracking-widest text-gray-500">Scroll</span>
+            <div class="w-px h-10 bg-gradient-to-b from-eclipse-gold to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- Artists Section -->
+    <section id="artistas" class="py-24 px-6 bg-eclipse-black">
+        <div class="max-w-7xl mx-auto reveal">
+            <div class="mb-16">
+                <h2 class="text-4xl md:text-6xl font-serif font-bold mb-4">Mestres do <span class="text-eclipse-gold">Aço.</span></h2>
+                <div class="w-20 h-1 bg-eclipse-gold"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Artist 1 -->
+                <div class="group relative overflow-hidden rounded-2xl bg-eclipse-dark border border-white/5 transition-all hover:border-eclipse-gold/30">
+                    <div class="aspect-[4/5] overflow-hidden">
+                        <img src="./assets/artist1.png" alt="Victor Kael" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-eclipse-black via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 p-8 w-full translate-y-4 transition-transform duration-500 group-hover:translate-y-0">
+                        <p class="text-eclipse-gold text-xs font-bold uppercase tracking-widest mb-2">Realismo & Blackwork</p>
+                        <h3 class="text-3xl font-serif font-bold mb-4">Victor Kael</h3>
+                        <p class="text-gray-400 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                            Especialista em capturar a alma através de contrastes profundos e técnicas de hiper-realismo. Cada traço é uma conversa entre a pele e a eternidade.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Artist 2 -->
+                <div class="group relative overflow-hidden rounded-2xl bg-eclipse-dark border border-white/5 transition-all hover:border-eclipse-gold/30">
+                    <div class="aspect-[4/5] overflow-hidden">
+                        <img src="./assets/artist2.png" alt="Elena Frost" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-eclipse-black via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 p-8 w-full translate-y-4 transition-transform duration-500 group-hover:translate-y-0">
+                        <p class="text-eclipse-gold text-xs font-bold uppercase tracking-widest mb-2">Micro-realismo & Fineline</p>
+                        <h3 class="text-3xl font-serif font-bold mb-4">Elena Frost</h3>
+                        <p class="text-gray-400 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                            A delicadeza em sua forma mais pura. Elena transforma conceitos sutis em traços finos e precisos, criando joias permanentes na pele.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 px-6 bg-eclipse-dark">
+        <div class="max-w-7xl mx-auto reveal">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-6xl font-serif font-bold mb-6">A Narrativa na <span class="text-eclipse-gold italic">Pele.</span></h2>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <button class="glass-effect border border-eclipse-gold/50 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-eclipse-gold">Todos</button>
+                    <button class="glass-effect border border-white/10 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:border-eclipse-gold/30 transition-colors">Realismo</button>
+                    <button class="glass-effect border border-white/10 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:border-eclipse-gold/30 transition-colors">Blackwork</button>
+                    <button class="glass-effect border border-white/10 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:border-eclipse-gold/30 transition-colors">Fine Line</button>
+                </div>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="group relative aspect-square overflow-hidden rounded-xl bg-eclipse-black">
+                    <img src="./assets/port1.png" alt="Tattoo Realismo" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-eclipse-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-6 text-center">
+                        <div>
+                            <span class="text-eclipse-gold text-[10px] font-bold uppercase tracking-[0.2em]">Realismo</span>
+                            <h4 class="text-xl font-serif mt-2">O Guardião da Alma</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="group relative aspect-square overflow-hidden rounded-xl bg-eclipse-black">
+                    <img src="./assets/port2.png" alt="Tattoo Fine Line" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-eclipse-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-6 text-center">
+                        <div>
+                            <span class="text-eclipse-gold text-[10px] font-bold uppercase tracking-[0.2em]">Fine Line</span>
+                            <h4 class="text-xl font-serif mt-2">Leveza Etérea</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="group relative aspect-square overflow-hidden rounded-xl bg-eclipse-black">
+                    <img src="./assets/port3.png" alt="Tattoo Blackwork" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-eclipse-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-6 text-center">
+                        <div>
+                            <span class="text-eclipse-gold text-[10px] font-bold uppercase tracking-[0.2em]">Blackwork</span>
+                            <h4 class="text-xl font-serif mt-2">Geometria Sagrada</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <button class="border-b-2 border-eclipse-gold text-eclipse-gold pb-1 text-sm font-bold uppercase tracking-widest hover:text-white hover:border-white transition-all">
+                    Explorar Coleção Completa
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio / Atmosphere Section -->
+    <section id="estudio" class="py-32 px-6 bg-eclipse-black overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16 reveal">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-4xl md:text-6xl font-serif font-bold mb-8">Onde o Silêncio é <span class="text-eclipse-gold italic">Luxo.</span></h2>
+                <p class="text-gray-400 text-lg font-light leading-relaxed mb-6">
+                    Mais que um estúdio, um santuário. Projetamos cada centímetro do Eclipse Studio para ser uma extensão da galeria de arte que você carrega na pele. 
+                </p>
+                <ul class="space-y-4 text-sm text-gray-300 tracking-wide">
+                    <li class="flex items-center gap-3">
+                        <div class="w-1.5 h-1.5 rounded-full bg-eclipse-gold"></div>
+                        Ambiente asséptico & Certificação de Grau Hospitalar
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="w-1.5 h-1.5 rounded-full bg-eclipse-gold"></div>
+                        Iluminação projetada para precisão artística
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="w-1.5 h-1.5 rounded-full bg-eclipse-gold"></div>
+                        Conforto e privacidade absoluta durante a sessão
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2 relative">
+                <div class="absolute -inset-4 border border-eclipse-gold/20 -z-10 translate-x-4 translate-y-4"></div>
+                <img src="./assets/studio.png" alt="Interior do Estúdio" class="w-full h-auto rounded-lg shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="contato" class="py-32 px-6 bg-eclipse-dark relative overflow-hidden">
+        <!-- Abstract Element -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-eclipse-gold/5 blur-[120px] rounded-full"></div>
+        
+        <div class="max-w-7xl mx-auto flex flex-col items-center reveal">
+            <div class="text-center mb-16 max-w-2xl">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Comece sua <span class="text-eclipse-gold">Jornada.</span></h2>
+                <p class="text-gray-400 font-light">Conte-nos sua ideia. Nossa equipe de curadoria selecionará o artista ideal para o seu projeto.</p>
+            </div>
+
+            <!-- Booking Form Card (Aplica Figura/Fundo) -->
+            <div class="w-full max-w-2xl glass-effect p-8 md:p-12 rounded-2xl border border-white/10 shadow-2xl relative z-10 transition-transform hover:scale-[1.01]">
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Seu Nome</label>
+                            <input type="text" placeholder="Como podemos te chamar?" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-eclipse-gold transition-colors">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">E-mail ou WhatsApp</label>
+                            <input type="text" placeholder="(00) 00000-0000" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-eclipse-gold transition-colors">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Sua Ideia</label>
+                        <textarea rows="4" placeholder="Descreva brevemente o que você deseja tatuar..." class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-eclipse-gold transition-colors"></textarea>
+                    </div>
+                    <button class="w-full bg-eclipse-gold text-eclipse-black font-bold py-4 rounded-lg uppercase tracking-widest text-xs hover:brightness-110 transition-all">
+                        Enviar Solicitação de Orçamento
+                    </button>
+                    <p class="text-center text-[10px] text-gray-500 italic">Ou fale conosco via <a href="#" class="text-eclipse-gold underline">WhatsApp direto</a>.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-white/5 bg-eclipse-black">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-xl font-serif font-bold text-eclipse-gold">
+                ECLIPSE<span class="text-white">STUDIO</span>
+            </div>
+            <div class="flex gap-8 text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                <a href="#" class="hover:text-white transition-colors">Instagram</a>
+                <a href="#" class="hover:text-white transition-colors">Pinterest</a>
+                <a href="#" class="hover:text-white transition-colors">Twitter</a>
+            </div>
+            <div class="text-[10px] text-gray-500 tracking-widest uppercase">
+                © 2026 Eclipse Studio — Todos os Direitos Reservados
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Reveal Script -->
+    <script>
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
