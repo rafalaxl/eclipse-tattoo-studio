@@ -12,32 +12,15 @@
     <meta property="og:description" content="Transformamos sua identidade em obras de arte exclusivas. Conheça nosso estúdio boutique.">
     <meta property="og:image" content="./assets/hero_tattoo.webp">
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS Static -->
+    <link rel="stylesheet" href="tailwind.min.css">
+    <!-- Google Fonts Preconnections -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'eclipse-black': '#0a0a0a',
-                        'eclipse-dark': '#1a1a1a',
-                        'eclipse-gold': '#c5a059',
-                    },
-                    spacing: {
-                        '24': '1.5rem',
-                    },
-                    fontFamily: {
-                        'serif': ['"Playfair Display"', 'serif'],
-                        'sans': ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
     <!-- JSON-LD Structured Data for local business -->
     <script type="application/ld+json">
     {
@@ -99,7 +82,7 @@
     <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
         <!-- Background Img Overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="./assets/hero_tattoo.webp" alt="Tatuador trabalhando em um estúdio premium" class="w-full h-full object-cover opacity-40">
+            <img src="./assets/hero_tattoo.webp" alt="Tatuador trabalhando em um estúdio premium" class="w-full h-full object-cover opacity-40" fetchpriority="high">
             <div class="absolute inset-0 bg-gradient-to-t from-eclipse-black via-transparent to-eclipse-black/60"></div>
         </div>
 
@@ -140,7 +123,7 @@
                 <!-- Artist 1 -->
                 <div class="group relative overflow-hidden rounded-2xl bg-eclipse-dark border border-white/5 transition-all hover:border-eclipse-gold/30">
                     <div class="aspect-[4/5] overflow-hidden">
-                        <img src="./assets/artist1.webp" alt="Victor Kael, tatuador especialista em realismo e blackwork" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
+                        <img src="./assets/artist1.webp" alt="Victor Kael, tatuador especialista em realismo e blackwork" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" loading="lazy">
                     </div>
                     <div class="absolute inset-0 bg-gradient-to-t from-eclipse-black via-transparent to-transparent opacity-80"></div>
                     <div class="absolute bottom-0 p-8 w-full translate-y-4 transition-transform duration-500 group-hover:translate-y-0">
@@ -155,7 +138,7 @@
                 <!-- Artist 2 -->
                 <div class="group relative overflow-hidden rounded-2xl bg-eclipse-dark border border-white/5 transition-all hover:border-eclipse-gold/30">
                     <div class="aspect-[4/5] overflow-hidden">
-                        <img src="./assets/artist2.webp" alt="Elena Frost, tatuadora especialista em micro-realismo e fine line" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105">
+                        <img src="./assets/artist2.webp" alt="Elena Frost, tatuadora especialista em micro-realismo e fine line" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" loading="lazy">
                     </div>
                     <div class="absolute inset-0 bg-gradient-to-t from-eclipse-black via-transparent to-transparent opacity-80"></div>
                     <div class="absolute bottom-0 p-8 w-full translate-y-4 transition-transform duration-500 group-hover:translate-y-0">
@@ -187,7 +170,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
                 <!-- Realismo -->
                 <div class="portfolio-item group relative aspect-square overflow-hidden rounded-xl bg-eclipse-black" data-category="realismo">
-                    <img src="./assets/port-realismo-1.webp" alt="Tatuagem em estilo realismo - O Guardião da Alma" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+                    <img src="./assets/port-realismo-1.webp" alt="Tatuagem em estilo realismo - O Guardião da Alma" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-eclipse-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-6 text-center">
                         <div>
                             <span class="text-eclipse-gold text-[10px] font-bold uppercase tracking-[0.2em]">Realismo</span>
@@ -197,7 +180,7 @@
                 </div>
 
                 <div class="portfolio-item group relative aspect-square overflow-hidden rounded-xl bg-eclipse-black" data-category="realismo">
-                    <img src="./assets/port-realismo-2.webp" alt="Tatuagem em estilo realismo - Kratos" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+                    <img src="./assets/port-realismo-2.webp" alt="Tatuagem em estilo realismo - Kratos" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-eclipse-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-6 text-center">
                         <div>
                             <span class="text-eclipse-gold text-[10px] font-bold uppercase tracking-[0.2em]">Realismo</span>
@@ -207,7 +190,7 @@
                 </div>
 
                 <div class="portfolio-item group relative aspect-square overflow-hidden rounded-xl bg-eclipse-black" data-category="realismo">
-                    <img src="./assets/port-realismo-3.webp" alt="Tatuagem em estilo realismo - Leão" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+                    <img src="./assets/port-realismo-3.webp" alt="Tatuagem em estilo realismo - Leão" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-eclipse-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-6 text-center">
                         <div>
                             <span class="text-eclipse-gold text-[10px] font-bold uppercase tracking-[0.2em]">Realismo</span>
@@ -218,7 +201,7 @@
 
                 <!-- Blackwork -->
                 <div class="portfolio-item group relative aspect-square overflow-hidden rounded-xl bg-eclipse-black" data-category="blackwork">
-                    <img src="./assets/port-blackwork-1.webp" alt="Tatuagem em estilo blackwork - Geometria Sagrada" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+                    <img src="./assets/port-blackwork-1.webp" alt="Tatuagem em estilo blackwork - Geometria Sagrada" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-eclipse-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-6 text-center">
                         <div>
                             <span class="text-eclipse-gold text-[10px] font-bold uppercase tracking-[0.2em]">Blackwork</span>
@@ -228,7 +211,7 @@
                 </div>
 
                 <div class="portfolio-item group relative aspect-square overflow-hidden rounded-xl bg-eclipse-black" data-category="blackwork">
-                    <img src="./assets/port-blackwork-2.webp" alt="Tatuagem em estilo blackwork - Mario Mundos" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+                    <img src="./assets/port-blackwork-2.webp" alt="Tatuagem em estilo blackwork - Mario Mundos" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-eclipse-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-6 text-center">
                         <div>
                             <span class="text-eclipse-gold text-[10px] font-bold uppercase tracking-[0.2em]">Blackwork</span>
@@ -238,7 +221,7 @@
                 </div>
 
                 <div class="portfolio-item group relative aspect-square overflow-hidden rounded-xl bg-eclipse-black" data-category="blackwork">
-                    <img src="./assets/port-blackwork-3.webp" alt="Tatuagem em estilo blackwork - Arquiteto das Nuvens" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+                    <img src="./assets/port-blackwork-3.webp" alt="Tatuagem em estilo blackwork - Arquiteto das Nuvens" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-eclipse-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-6 text-center">
                         <div>
                             <span class="text-eclipse-gold text-[10px] font-bold uppercase tracking-[0.2em]">Blackwork</span>
@@ -249,7 +232,7 @@
 
                 <!-- Fine Line -->
                 <div class="portfolio-item group relative aspect-square overflow-hidden rounded-xl bg-eclipse-black" data-category="fine-line">
-                    <img src="./assets/port-fineline-1.webp" alt="Tatuagem em estilo fine line - Leveza Etérea" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+                    <img src="./assets/port-fineline-1.webp" alt="Tatuagem em estilo fine line - Leveza Etérea" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-eclipse-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-6 text-center">
                         <div>
                             <span class="text-eclipse-gold text-[10px] font-bold uppercase tracking-[0.2em]">Fine Line</span>
@@ -259,7 +242,7 @@
                 </div>
 
                 <div class="portfolio-item group relative aspect-square overflow-hidden rounded-xl bg-eclipse-black" data-category="fine-line">
-                    <img src="./assets/port-fineline-2.webp" alt="Tatuagem em estilo fine line - Pescador de Estrelas" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+                    <img src="./assets/port-fineline-2.webp" alt="Tatuagem em estilo fine line - Pescador de Estrelas" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-eclipse-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-6 text-center">
                         <div>
                             <span class="text-eclipse-gold text-[10px] font-bold uppercase tracking-[0.2em]">Fine Line</span>
@@ -269,7 +252,7 @@
                 </div>
 
                 <div class="portfolio-item group relative aspect-square overflow-hidden rounded-xl bg-eclipse-black" data-category="fine-line">
-                    <img src="./assets/port-fineline-3.webp" alt="Tatuagem em estilo fine line - Link e Zelda" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+                    <img src="./assets/port-fineline-3.webp" alt="Tatuagem em estilo fine line - Link e Zelda" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-eclipse-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-6 text-center">
                         <div>
                             <span class="text-eclipse-gold text-[10px] font-bold uppercase tracking-[0.2em]">Fine Line</span>
@@ -279,7 +262,7 @@
                 </div>
 
                 <div class="portfolio-item group relative aspect-square overflow-hidden rounded-xl bg-eclipse-black" data-category="fine-line">
-                    <img src="./assets/port-fineline-4.webp" alt="Tatuagem em estilo fine line - Jardineiro dos Sonhos" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+                    <img src="./assets/port-fineline-4.webp" alt="Tatuagem em estilo fine line - Jardineiro dos Sonhos" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-eclipse-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-6 text-center">
                         <div>
                             <span class="text-eclipse-gold text-[10px] font-bold uppercase tracking-[0.2em]">Fine Line</span>
@@ -322,7 +305,7 @@
             </div>
             <div class="w-full md:w-1/2 relative">
                 <div class="absolute -inset-4 border border-eclipse-gold/20 -z-10 translate-x-4 translate-y-4"></div>
-                <img src="./assets/studio.webp" alt="Interior do estúdio de tatuagem" class="w-full h-auto rounded-lg shadow-2xl">
+                <img src="./assets/studio.webp" alt="Interior do estúdio de tatuagem" class="w-full h-auto rounded-lg shadow-2xl" loading="lazy">
             </div>
         </div>
     </section>
