@@ -3,6 +3,7 @@
 :root {
     --glass: rgba(255, 255, 255, 0.03);
     --glass-border: rgba(255, 255, 255, 0.1);
+    --gold: #c5a059;
 }
 
 .glass-effect {
@@ -10,6 +11,10 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--glass-border);
+}
+
+select option {
+    color: #0a0a0a;
 }
 
 /* Base Baseline and Grid */
@@ -43,6 +48,24 @@ body {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+.portfolio-filter {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-filter:hover,
+.portfolio-filter.is-active {
+    border-color: rgba(197, 160, 89, 0.5);
+    color: var(--gold);
+}
+
+.portfolio-item {
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.portfolio-item.is-hidden {
+    display: none;
 }
 
 /* Smooth Scrolling */

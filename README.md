@@ -1,50 +1,80 @@
-# 🌘 Eclipse Tattoo Studio — Boutique de Arte na Pele
+# Eclipse Tattoo Studio - Landing Page para Estúdio de Tatuagem
 
 ![License](https://img.shields.io/badge/license-MIT-gold)
-![Status](https://img.shields.io/badge/status-Protótipo%20de%20Design-orange)
+![Status](https://img.shields.io/badge/status/Landing%20Page%20Funcional-gold)
 
-Um protótipo de landing page premium para estúdios de tatuagem de alto padrão, focado em **Vibe Coding** e **UX Analítica**. Desenvolvido para demonstrar a união entre arte analógica e engenharia digital moderna.
+Landing page premium para estúdios de tatuagem, criada para apresentar artistas, estilos, portfólio e facilitar pedidos de orçamento pelo WhatsApp.
 
----
-
-## 🎨 A Proposta
-O **Eclipse Studio** não é apenas um site; é uma extensão digital do santuário físico. O design utiliza uma paleta **Deep Black & Gold**, tipografia serifada de autoridade e micro-interações que guiam o olhar através da jornada do cliente.
-
-### ✨ Diferenciais Técnicos
-- **Design-First**: Identidade visual baseada em princípios Gestalt e psicologia das cores.
-- **GEO (Generative Engine Optimization)**: Implementação de JSON-LD para indexação semântica por IAs.
-- **Glassmorphism**: Efeitos de transparência e desfoque via CSS moderno.
-- **Performance**: Zero dependências pesadas, utilizando Tailwind CSS via CDN para prototipagem rápida.
+O foco do projeto é reduzir atrito no atendimento: o cliente informa a ideia, estilo, local do corpo, tamanho aproximado e se possui imagem de referência. Em seguida, o site abre o WhatsApp com uma mensagem organizada para o tatuador responder mais rápido.
 
 ---
 
-## 🛠️ Stack Tecnológica
-- **Frontend**: HTML5 Semântico, Tailwind CSS.
-- **Tipografia**: Playfair Display (Serif) & Inter (Sans).
-- **Animações**: Intersection Observer API (Scroll Reveal) & CSS Keyframes.
-- **SEO/GEO**: Open Graph Protocol & JSON-LD.
+## Proposta
+
+O **Eclipse Studio** funciona como uma vitrine digital para um estúdio boutique de tatuagem. A página combina visual escuro, detalhes em dourado, imagens grandes e chamadas diretas para orçamento.
+
+### Funcionalidades
+
+- Portfólio com filtro por estilo: Realismo, Blackwork e Fine Line.
+- Formulário de orçamento conectado ao WhatsApp.
+- Mensagem automática com os dados principais do projeto.
+- Instrução para envio de imagem de referência pelo WhatsApp.
+- Botões de chamada para ação funcionando.
+- SEO básico, Open Graph e JSON-LD para negócio local.
+- Animações leves com Intersection Observer.
 
 ---
 
-## 🚀 Como Visualizar
-1. Clone este repositório.
+## Stack Tecnológica
+
+- **Frontend**: HTML5 semântico, CSS e Tailwind CSS via CDN.
+- **Tipografia**: Playfair Display e Inter.
+- **Interações**: JavaScript puro.
+- **SEO/GEO**: Open Graph e JSON-LD.
+
+---
+
+## Como Visualizar
+
+1. Clone ou baixe este repositório.
 2. Abra o arquivo `index.html` em qualquer navegador moderno.
-3. *Nota: As imagens estão localizadas na pasta `/assets`.*
+3. As imagens estão localizadas na pasta `/assets`.
+
+Não é necessário instalar dependências ou rodar build.
 
 ---
 
-## 📋 Status de Desenvolvimento
-Este projeto é um **modelo conceitual** para portfólio. 
-- [x] Design de Interface (UI)
-- [x] SEO Básico & Open Graph
-- [x] Responsividade Mobile
-- [ ] Integração com Backend (Supabase)
-- [ ] Sistema de Agendamento em Tempo Real
+## Personalização
+
+Para usar com outro estúdio, ajuste no `index.html`:
+
+- Nome do estúdio.
+- Número de WhatsApp.
+- Textos comerciais.
+- Links de Instagram, Pinterest ou outras redes.
+- Imagens da pasta `/assets`.
+- Dados do JSON-LD, como telefone, endereço e domínio.
 
 ---
 
-## ⚖️ Licença
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+## Status de Desenvolvimento
+
+- [x] Design de interface
+- [x] Responsividade mobile
+- [x] SEO básico e Open Graph
+- [x] Filtros funcionais no portfólio
+- [x] Orçamento via WhatsApp
+- [x] Mensagem automática com informações do cliente
+- [ ] Integração com backend
+- [ ] Upload de referência com armazenamento próprio
+- [ ] Sistema de agendamento em tempo real
 
 ---
-**Criado por Rafael — Builder de Elite via Vibe Coding.**
+
+## Licença
+
+Distribuído sob a licença MIT.
+
+---
+
+Criado por Rafael.
